@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # prepare build tools
 sudo apt-get update && sudo apt-get install --yes --no-install-recommends ca-certificates build-essential git libssl-dev curl cpio bspatch vim gettext bc bison flex dosfstools kmod jq
 
