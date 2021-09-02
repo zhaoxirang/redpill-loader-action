@@ -13,40 +13,40 @@ jobs:
         id: checkout
         with:
           submodules: 'true'
-      - name: Build DS3615xs 6.2.4
-        id: build-ds3615xs-624
-        run: |
-            bash build-ds3615xs-6.2.4.sh
-      - name: Build DS3615xs 7.0
-        id: build-ds3615xs-70
-        run: |
-            bash build-ds3615xs-7.0.sh
-      - name: Build DS918+ 6.2.4
-        id: build-ds918-624
-        run: |
-            bash build-ds918-6.2.4.sh
+#      - name: Build DS3615xs 6.2.4
+#        id: build-ds3615xs-624
+#        run: |
+#            bash build-ds3615xs-6.2.4.sh
+#      - name: Build DS3615xs 7.0
+#        id: build-ds3615xs-70
+#        run: |
+#            bash build-ds3615xs-7.0.sh
+#      - name: Build DS918+ 6.2.4
+#        id: build-ds918-624
+#        run: |
+#            bash build-ds918-6.2.4.sh
       - name: Build DS918+ 7.0
         id: build-ds918-70
         run: |
             bash build-ds918-7.0.sh
 
-      - name: Archive DS3615xs 6.2.4 loader image
-        uses: actions/upload-artifact@v2
-        with:
-          name: redpill-DS3615xs_6.2.4-loader
-          path: output/redpill-DS3615xs_6.2.4*.img
-
-      - name: Archive DS3615xs 7.0 loader image
-        uses: actions/upload-artifact@v2
-        with:
-          name: redpill-DS3615xs_7.0-loader
-          path: output/redpill-DS3615xs_7.0*.img
-
-      - name: Archive DS918+ 6.2.4 loader image
-        uses: actions/upload-artifact@v2
-        with:
-          name: redpill-DS918+_6.2.4-loader
-          path: output/redpill-DS918+_6.2.4*.img
+#      - name: Archive DS3615xs 6.2.4 loader image
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: redpill-DS3615xs_6.2.4-loader
+#          path: output/redpill-DS3615xs_6.2.4*.img
+#
+#      - name: Archive DS3615xs 7.0 loader image
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: redpill-DS3615xs_7.0-loader
+#          path: output/redpill-DS3615xs_7.0*.img
+#
+#      - name: Archive DS918+ 6.2.4 loader image
+#        uses: actions/upload-artifact@v2
+#        with:
+#          name: redpill-DS918+_6.2.4-loader
+#          path: output/redpill-DS918+_6.2.4*.img
 
       - name: Archive DS918+ 7.0 loader image
         uses: actions/upload-artifact@v2
